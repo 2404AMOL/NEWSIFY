@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
+.Navbar{
+    background-color: #f1f1f4;
+}
+.NavItems{
+    font-size: 1.24rem;
+    font-weight: 900;
+    color: white;
+    font-family: "Bungee Spice", serif;
+    font-weight: 400;
+}
+.NavDropDown{
+    font-family: "Bungee Tint", serif;
+    font-weight: 400;
+    font-size: 1.55rem;
+    color: black;
+    font-weight: bold;
+}
+
+.NavDropDown .NavDropDownItems:hover{
+    background-color: cyan;
+}
+
+/* For mobile (max-width: 991px) */
+@media (max-width: 991px) {
+    .Navbar {
+      /* Adjust padding or height on mobile */
+      padding-top: 5px;   /* Adjust top padding */
+      padding-bottom: 5px; /* Adjust bottom padding */
+      height: auto;        /* Allow it to auto-adjust height */
+    }
+  
+    .navbar-collapse {
+      /* Adjust the height of the collapsed navbar */
+      padding-top: 5px; /* Adjust padding inside collapse */
+      padding-bottom: 5px;
+    }
+  
+    .navbar-toggler {
+      /* Ensure the toggler button is positioned properly */
+      padding: 8px 10px; /* You can adjust these values */
+    }
+    
+    .navbar-brand img {
+      /* Resize the brand logo on smaller screens */
+      height: 50px; /* Adjust this based on your design */
+      width: auto;
+    }
+  
+    .NavItems {
+      padding-top: 0px; /* Reduce padding for nav items */
+      padding-bottom: 0px;
+    }
+  
+    .NavDropDown .dropdown-menu {
+      /* Ensure dropdown menu displays properly */
+      position: absolute;
+      z-index: 9999;
+    }
+  }
+  

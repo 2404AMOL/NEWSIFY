@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.Politics h1{
+    font-family: "Squada One", serif;
+    font-weight: 400;
+}
+.Politics h3{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+}
+.Politics .Politics-Inner p{
+    font-family: "Metal", serif;
+    font-weight: 400;
+}
+.Politics .Politics-Inner h4{
+    font-family: "Quantico", serif;
+    font-weight: 700;  
+}
+.Politics .Politics-Inner a{
+    text-decoration: none;
+    font-weight: bold;
+}

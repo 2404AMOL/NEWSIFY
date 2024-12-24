@@ -1,0 +1,36 @@
+.Footer{
+    width: 100%;
+    background-color: #f1f1f4;
+}
+
+.Footer .row .col p{
+    font-size: 1.24rem;
+    font-weight: 700;
+    color: black;
+}
+.Footer .row .col .footer-links li{
+    list-style-type: none;
+}
+.Footer .row .col .footer-links li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: blue;
+
+}
+
+.Footer .row .col .social-media-links li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.Footer .row .col .social-media-links .icons {
+    font-size: 1.50rem;
+    color: blue;
+}
+.Footer .row .col .social-media-links li a{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 2%;
+    font-size: 1rem;
+    color: blue;
+}

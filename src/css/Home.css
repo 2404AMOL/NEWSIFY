@@ -1,0 +1,31 @@
+/********************************************************** FONTS STARTS ******************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+/********************************************************** FONTS STARTS ******************************************************************/
+.Home{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    /* border: 1px solid; */    
+}
+.HomeContainer{
+    width: 70%;
+    margin: 0 auto;
+}
+.HomeContainer .row .col .home-logo{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.HomeContainer .row .col .home-heading{
+    font-family: "Honk", serif;
+    font-size: 4rem;
+    font-weight: 400;
+}
+.HomeContainer .row .col .home-desc{
+    font-family: "Charm", serif;
+    font-optical-sizing: auto;
+    font-size: 2rem;
+
+}

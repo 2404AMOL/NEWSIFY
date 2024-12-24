@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal&display=swap');
+
+main{
+    display: flex;
+    background-color: #f7f7fc;
+}
+.carousel{
+    box-shadow: inset 10px 15px 20px #fff,-10px -15px 20px white;
+}
+.Trending{
+    width: 30%;
+    display:  flex;
+    flex-direction: column;
+    text-align: center;
+}
+.ViralVideos{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.carousel-inner .carousel-item h3{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+
+.ViralVideos .carousel .carousel-inner h4{
+    font-family: "Metal", serif;
+    font-weight: 400;
+}
