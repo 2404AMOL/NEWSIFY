@@ -12,6 +12,8 @@ const Tesla = () => {
                 const response = await axios.get(
                     'https://newsapi.org/v2/everything?q=tesla&from=2024-11-20&sortBy=publishedAt&apiKey=f79141b2be7f493c855af2f4ea7ea02f'
                 );
+                console.log(response.data.articles);
+                
                 setArticles(response.data.articles);
             } catch (err) {
                 console.error("Error fetching articles:", err);

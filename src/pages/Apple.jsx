@@ -9,7 +9,7 @@ export const Apple = () => {
     useEffect(() => {
         const fetchArticles = async () => {
             try {
-                const response = await axios.get(
+                const response = await axios.request(
                     'https://newsapi.org/v2/everything?q=apple&from=2024-12-18&to=2024-12-18&sortBy=popularity&apiKey=f79141b2be7f493c855af2f4ea7ea02f'
                 );
                 setArticles(response.data.articles);

@@ -6,34 +6,15 @@ const Politics = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const articlesPerPage = 4; // Number of articles per page
 
-    const fetchArticles = async (url) => {
-        let retries = 3;
-        let delay = 1000; // initial delay (ms)
-
-        while (retries > 0) {
-            try {
-                const response = await axios.get(url);
-                return response.data.results;
-            } catch (error) {
-                if (error.response && error.response.status === 429) {
-                    // Rate-limited, retry after the delay
-                    console.log(`Rate limited. Retrying in ${delay} ms...`);
-                    await new Promise(resolve => setTimeout(resolve, delay));
-                    retries--;
-                    delay *= 2; // Exponential backoff
-                } else {
-                    console.error("Error fetching articles:", error);
-                    throw error;
-                }
-            }
-        }
-        throw new Error('Max retries reached');
-    };
+ 
     useEffect(() => {
         const fetchAllArticles = async () => {
             try {
-                const response = await fetchArticles('https://newsdata.io/api/1/news?apikey=pub_628482833c8e95e962cb60f348db2ff7eb34e&q=politics');
+                const response = await axios.request('https://newsdata.io/api/1/news?apikey=pub_628482833c8e95e962cb60f348db2ff7eb34e&q=politics');
+                console.log(response.data.results); // Check the structure of the response
+
                 setResults(response.data.results);
+
             } catch (err) {
                 console.error("Error fetching articles:", err);
             }

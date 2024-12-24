@@ -9,9 +9,7 @@ const Business = () => {
     useEffect(() => {
         const fetchArticles = async () => {
             try {
-                const response = await axios.get(
-                    'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f79141b2be7f493c855af2f4ea7ea02f'
-                );
+                const response = await axios.request('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=f79141b2be7f493c855af2f4ea7ea02f');
                 setArticles(response.data.articles);
             } catch (err) {
                 console.error("Error fetching articles:", err);
